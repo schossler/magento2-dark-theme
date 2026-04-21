@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title/>
+        <!-- Google Fonts: Sora + Inter -->
+        <link rel="preconnect" src="https://fonts.googleapis.com"/>
+        <link rel="preconnect" src="https://fonts.gstatic.com" attrs="crossorigin"/>
+        <css src="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap" src_type="url"/>
+        <!-- Meta theme color -->
+        <meta name="theme-color" content="#0d0f12"/>
+    </head>
+    <body>
+        <!-- Adiciona classe ao body para identificar o tema -->
+        <attribute name="class" value="obsidian-dark-theme"/>
+    </body>
+</page>

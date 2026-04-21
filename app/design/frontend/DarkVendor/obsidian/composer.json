@@ -1,0 +1,17 @@
+{
+    "name": "darkvendor/magento2-theme-obsidian",
+    "description": "Obsidian Dark Theme for Magento 2 — based on Luma",
+    "require": {
+        "php": "~8.1.0||~8.2.0||~8.3.0",
+        "magento/theme-frontend-luma": "*",
+        "magento/framework": "*"
+    },
+    "type": "magento2-theme",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}

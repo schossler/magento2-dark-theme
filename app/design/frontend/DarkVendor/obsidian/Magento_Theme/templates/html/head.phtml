@@ -1,0 +1,19 @@
+<?php
+/**
+ * Obsidian Dark Theme — head.phtml override
+ * Adiciona meta tags para dark mode e PWA
+ */
+?>
+<head<?= /* @noEscape */ $block->getAttributes() ?>>
+    <meta charset="utf-8"/>
+    <meta name="description" content="<?= $block->escapeHtmlAttr($block->getDescription()) ?>"/>
+    <meta name="keywords" content="<?= $block->escapeHtmlAttr($block->getKeywords()) ?>"/>
+    <meta name="robots" content="<?= $block->escapeHtmlAttr($block->getRobots()) ?>"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <meta name="color-scheme" content="dark"/>
+    <meta name="theme-color" content="#0d0f12"/>
+    <meta name="msapplication-TileColor" content="#0d0f12"/>
+    <?= $block->getChildHtml() ?>
+    <?= $block->helper(\Magento\Core\Helper\Data::class)->getInlineTranslateTag() /* @noEscape */ ?>
+    <?= $block->helper(\Magento\Google\Helper\Data::class)->getChildBlockHtml() /* @noEscape */ ?>
+</head>

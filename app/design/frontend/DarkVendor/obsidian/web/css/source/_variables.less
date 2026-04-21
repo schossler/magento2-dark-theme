@@ -1,0 +1,243 @@
+// =============================================================================
+// OBSIDIAN DARK THEME — _variables.less
+// Paleta: fundo escuro profundo + texto claro + acentos âmbar/dourado
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// CORES BASE
+// -----------------------------------------------------------------------------
+@obsidian-bg-deepest:      #0d0f12;   // fundo mais escuro (body)
+@obsidian-bg-base:         #13161b;   // fundo principal
+@obsidian-bg-elevated:     #1a1e26;   // cards, painéis
+@obsidian-bg-surface:      #22273a;   // inputs, dropdowns
+@obsidian-bg-hover:        #2a2f42;   // hover states
+
+@obsidian-border:          #2e3347;
+@obsidian-border-light:    #3a4060;
+
+// Texto
+@obsidian-text-primary:    #e8eaf0;   // texto principal
+@obsidian-text-secondary:  #a0a8c0;   // texto secundário
+@obsidian-text-muted:      #606880;   // texto desabilitado/muted
+@obsidian-text-inverse:    #0d0f12;   // texto sobre fundos claros
+
+// Acentos — Âmbar Dourado
+@obsidian-accent:          #f0a500;   // cor de destaque primária
+@obsidian-accent-hover:    #ffb830;   // hover do acento
+@obsidian-accent-dark:     #c47f00;   // versão escura do acento
+@obsidian-accent-subtle:   rgba(240, 165, 0, 0.12); // fundo sutil
+
+// Secundário — Azul Aço
+@obsidian-secondary:       #4a90d9;
+@obsidian-secondary-hover: #6aaff0;
+@obsidian-secondary-dark:  #2f6fac;
+
+// Status
+@obsidian-success:         #3dba7e;
+@obsidian-warning:         #f0a500;
+@obsidian-error:           #e05a5a;
+@obsidian-info:            #4a90d9;
+
+// -----------------------------------------------------------------------------
+// TIPOGRAFIA
+// -----------------------------------------------------------------------------
+@font-family-name__base:   'Inter', 'Segoe UI', sans-serif;
+@font-family-name__heading:'Sora', 'Inter', sans-serif;
+@font-family__base:        @font-family-name__base, sans-serif;
+@font-family__headings:    @font-family-name__heading, sans-serif;
+
+@font-color__base:         @obsidian-text-primary;
+@font-size__base:          15px;
+@font-weight__regular:     400;
+@font-weight__semibold:    600;
+@font-weight__bold:        700;
+
+@line-height__base:        1.7;
+
+// Heading sizes
+@h1__font-size:            2.4rem;
+@h2__font-size:            1.9rem;
+@h3__font-size:            1.5rem;
+@h4__font-size:            1.25rem;
+@h5__font-size:            1.1rem;
+@h6__font-size:            1rem;
+
+// -----------------------------------------------------------------------------
+// LAYOUT
+// -----------------------------------------------------------------------------
+@layout__max-width:        1280px;
+@layout-indent__width:     20px;
+@layout-column__sidebar-width: 260px;
+
+// -----------------------------------------------------------------------------
+// FUNDO E PÁGINA
+// -----------------------------------------------------------------------------
+@page__background-color:   @obsidian-bg-deepest;
+@body__background-color:   @obsidian-bg-deepest;
+
+// -----------------------------------------------------------------------------
+// LINKS
+// -----------------------------------------------------------------------------
+@link__color:              @obsidian-accent;
+@link__hover__color:       @obsidian-accent-hover;
+@link__visited__color:     @obsidian-secondary;
+@link__text-decoration:    none;
+@link__hover__text-decoration: underline;
+
+// -----------------------------------------------------------------------------
+// HEADER
+// -----------------------------------------------------------------------------
+@header__background-color:         @obsidian-bg-base;
+@header-panel__background-color:   @obsidian-bg-deepest;
+@header-panel__text-color:         @obsidian-text-secondary;
+@header-icons-color:               @obsidian-text-secondary;
+@header-icons-color-hover:         @obsidian-accent;
+
+// -----------------------------------------------------------------------------
+// NAVEGAÇÃO / MENU
+// -----------------------------------------------------------------------------
+@navigation__background:                 @obsidian-bg-elevated;
+@navigation-level0-item__color:          @obsidian-text-primary;
+@navigation-level0-item__hover__color:   @obsidian-accent;
+@navigation-level0-item__active__color:  @obsidian-accent;
+
+@submenu__background:                    @obsidian-bg-surface;
+@submenu-item__color:                    @obsidian-text-secondary;
+@submenu-item__hover__color:             @obsidian-accent;
+
+// -----------------------------------------------------------------------------
+// BOTÕES
+// -----------------------------------------------------------------------------
+@button__background:              @obsidian-accent;
+@button__border:                  transparent;
+@button__color:                   @obsidian-text-inverse;
+@button__hover__background:       @obsidian-accent-hover;
+@button__hover__border:           transparent;
+@button__hover__color:            @obsidian-text-inverse;
+@button__active__background:      @obsidian-accent-dark;
+
+@button-primary__background:      @obsidian-accent;
+@button-primary__border:          transparent;
+@button-primary__color:           @obsidian-text-inverse;
+@button-primary__hover__background: @obsidian-accent-hover;
+@button-primary__hover__color:    @obsidian-text-inverse;
+
+@button-secondary__background:    @obsidian-bg-surface;
+@button-secondary__border:        @obsidian-border-light;
+@button-secondary__color:         @obsidian-text-primary;
+@button-secondary__hover__background: @obsidian-bg-hover;
+@button-secondary__hover__color:  @obsidian-text-primary;
+
+// Padding
+@button__padding-vertical:   12px;
+@button__padding-horizontal: 24px;
+@button__font-size:          14px;
+@button__font-weight:        @font-weight__semibold;
+@button__border-radius:      6px;
+@button__letter-spacing:     0.4px;
+
+// -----------------------------------------------------------------------------
+// FORMULÁRIOS / INPUTS
+// -----------------------------------------------------------------------------
+@form-element-input__background:           @obsidian-bg-surface;
+@form-element-input__border:               1px solid @obsidian-border;
+@form-element-input__border-color:         @obsidian-border;
+@form-element-input__color:                @obsidian-text-primary;
+@form-element-input__focus__border-color:  @obsidian-accent;
+@form-element-input__placeholder__color:   @obsidian-text-muted;
+@form-element-input__border-radius:        6px;
+@form-element-input__height:               44px;
+@form-element-input__padding:              10px 14px;
+@form-element-input__font-size:            14px;
+
+@form-field-label__color:                  @obsidian-text-secondary;
+@form-field-label__font-weight:            @font-weight__semibold;
+@form-field-label__font-size:              13px;
+
+// -----------------------------------------------------------------------------
+// TABELAS
+// -----------------------------------------------------------------------------
+@table__background-color:        @obsidian-bg-elevated;
+@table-cell__padding-vertical:   12px;
+@table-cell__padding-horizontal: 16px;
+@table-head__background-color:   @obsidian-bg-surface;
+@table-head__color:               @obsidian-text-secondary;
+@table-row__hover__background-color: @obsidian-bg-hover;
+@table-border-color:             @obsidian-border;
+
+// -----------------------------------------------------------------------------
+// MENSAGENS
+// -----------------------------------------------------------------------------
+@message-success__background:   rgba(61, 186, 126, 0.15);
+@message-success__border-color: @obsidian-success;
+@message-success__color:        #6ee8a8;
+@message-error__background:     rgba(224, 90, 90, 0.15);
+@message-error__border-color:   @obsidian-error;
+@message-error__color:          #f08080;
+@message-warning__background:   rgba(240, 165, 0, 0.15);
+@message-warning__border-color: @obsidian-warning;
+@message-warning__color:        #ffc44d;
+@message-notice__background:    rgba(74, 144, 217, 0.15);
+@message-notice__border-color:  @obsidian-info;
+@message-notice__color:         #80b8f0;
+
+// -----------------------------------------------------------------------------
+// BREADCRUMBS
+// -----------------------------------------------------------------------------
+@breadcrumbs__container-margin:            0 0 16px;
+@breadcrumbs-item__color:                  @obsidian-text-muted;
+@breadcrumbs-item__hover__color:           @obsidian-accent;
+@breadcrumbs-current-item__color:          @obsidian-text-secondary;
+
+// -----------------------------------------------------------------------------
+// PAGER
+// -----------------------------------------------------------------------------
+@pager-item__background:        @obsidian-bg-surface;
+@pager-item__border:            @obsidian-border;
+@pager-item__color:             @obsidian-text-secondary;
+@pager-item__hover__background: @obsidian-bg-hover;
+@pager-item__hover__color:      @obsidian-text-primary;
+@pager-item-current__background: @obsidian-accent;
+@pager-item-current__color:     @obsidian-text-inverse;
+
+// -----------------------------------------------------------------------------
+// PRICE
+// -----------------------------------------------------------------------------
+@price__color:               @obsidian-accent;
+@price__font-size:           1.2rem;
+@price__font-weight:         @font-weight__bold;
+@price-old__color:           @obsidian-text-muted;
+
+// -----------------------------------------------------------------------------
+// PRODUCT CARD
+// -----------------------------------------------------------------------------
+@product-name-link__color:               @obsidian-text-primary;
+@product-name-link__hover__color:        @obsidian-accent;
+@product-item__background:               @obsidian-bg-elevated;
+@product-item-hover__background:         @obsidian-bg-surface;
+@product-item__border:                   1px solid @obsidian-border;
+@product-item__border-radius:            8px;
+
+// -----------------------------------------------------------------------------
+// SIDEBAR / LAYERED NAV
+// -----------------------------------------------------------------------------
+@sidebar__background-color:     @obsidian-bg-elevated;
+@filter-title__color:           @obsidian-text-primary;
+@filter-option__color:          @obsidian-text-secondary;
+@filter-option__hover__color:   @obsidian-accent;
+@filter-count__color:           @obsidian-text-muted;
+
+// -----------------------------------------------------------------------------
+// FOOTER
+// -----------------------------------------------------------------------------
+@footer__background-color:      @obsidian-bg-deepest;
+@footer__color:                 @obsidian-text-secondary;
+@footer-links__color:           @obsidian-text-secondary;
+@footer-links__hover__color:    @obsidian-accent;
+
+// -----------------------------------------------------------------------------
+// SCROLLBAR
+// -----------------------------------------------------------------------------
+@scrollbar-track:               @obsidian-bg-surface;
+@scrollbar-thumb:               @obsidian-border-light;
+@scrollbar-thumb-hover:         @obsidian-accent;
